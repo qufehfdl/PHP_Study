@@ -5,3 +5,6 @@
    2. PHP , Python , JAVA ...
    3. MySQL , Oracle ...
  - HTTP 프로토콜과 마찬가지로 상태를 유지하지 않는 특성
+
+ - PHP에서 MySQL DB에 연결하는 방법으로는<br>
+   MySQLi  ,  PDO 방식이 있다
