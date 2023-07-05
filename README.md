@@ -25,5 +25,5 @@ while($row = mysqli_fetch_array($result)) {<br>
 <br><br>
 php 에서 echo 를 이용해서 데이터 보낼때 <br>
 json_encode() 함수를 이용해서 JSON으로 내보낸다면 <br>
-내보내는 객체를 일반 변수가 아니라<br>
-배열 (연관배열)로 만들어야 한다<br>
+내보내는 객체를 일반 변수 또는 연관배열이 아니라<br>
+일반 배열로 만들어야 한다<br>
