@@ -21,3 +21,9 @@ while($row = mysqli_fetch_array($result)) {<br>
 하지만, PHP 5.5.0 이후로는 iconv를 사용하지 않는 것이 좋으며, 'mb_convert_encoding' 함수를 사용하는 것을 권장<br>
 <br>
 한글처리 : .iconv("EUC-KR", "UTF-8", TEST);<br>
+
+<br><br>
+php 에서 echo 를 이용해서 데이터 보낼때 <br>
+json_encode() 함수를 이용해서 JSON으로 내보낸다면 <br>
+내보내는 객체를 일반 변수가 아니라<br>
+배열 (연관배열)로 만들어야 한다<br>
