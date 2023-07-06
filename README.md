@@ -20,7 +20,7 @@ while($row = mysqli_fetch_array($result)) {<br>
 <br>
 하지만, PHP 5.5.0 이후로는 iconv를 사용하지 않는 것이 좋으며, 'mb_convert_encoding' 함수를 사용하는 것을 권장<br>
 <br>
-한글처리 : .iconv("EUC-KR", "UTF-8", TEST);<br>
+한글처리 : .iconv("EUC-KR", "UTF-8", TEST);     또는 mysqli_set_charset($myConn, "utf8"); 사용 !!!<br>
 
 <br><br>
 php 에서 echo 를 이용해서 데이터 보낼때 <br>
