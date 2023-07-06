@@ -10,13 +10,7 @@
    MySQLi  ,  PDO 방식이 있다
 <br>
 <br>
-// 결과 값에서 특정 컬럼에 mb_convert_encoding() 함수 적용<br>
-while($row = mysqli_fetch_array($result)) {<br>
-    $specific_column = $row['specific_column'];<br>
-    $specific_column = mb_convert_encoding($specific_column, 'UTF-8', 'CP949'); // cp949 -> utf-8 로 변환<br>
-    $row['specific_column'] = $specific_column; // 변환된 값으로 업데이트<br>
-}<br>
-<br>
+
 <br>
 하지만, PHP 5.5.0 이후로는 iconv를 사용하지 않는 것이 좋으며, 'mb_convert_encoding' 함수를 사용하는 것을 권장<br>
 <br>
